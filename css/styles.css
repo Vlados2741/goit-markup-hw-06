@@ -350,6 +350,8 @@ h1 {
   align-items: center;
 }
 .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   position: absolute;
 }
