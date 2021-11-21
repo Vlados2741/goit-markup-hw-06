@@ -208,6 +208,7 @@ h1 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 
   transition-property: opacity;
   transition-duration: 250ms;
@@ -247,7 +248,7 @@ h1 {
 }
 .input-label {
   position: absolute;
-  top: -45%;
+  top: -18px;
   left: 0;
   font-size: 12px;
   line-height: 1.16;
@@ -260,8 +261,9 @@ h1 {
 }
 .data {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
+  transform: translateY(-50%);
   width: 18px;
   height: 18px;
   fill: #212121;
@@ -294,10 +296,6 @@ h1 {
 
   color: rgba(117, 117, 117, 0.5);
 }
-.input-comment {
-  top: -15%;
-  left: 0;
-}
 .input-pole:focus {
   border: 1px solid #2196f3;
   outline: none;
@@ -314,7 +312,7 @@ h1 {
   right: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
@@ -385,6 +383,10 @@ h1 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.button-send {
+  width: 200px;
+  height: 50px;
 }
 .our-advants {
   padding-bottom: 0px;
